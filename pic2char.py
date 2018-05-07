@@ -3,8 +3,7 @@ from PIL import Image,ImageSequence,ImageDraw,ImageFont
 import os
 import argparse
 
-IMG="wjz.gif"
-
+IMG="timg.bmp"
 
 ascii_char = list("$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!;:,\"^`'.")
 
