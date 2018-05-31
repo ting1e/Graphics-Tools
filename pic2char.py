@@ -3,7 +3,7 @@ from PIL import Image,ImageSequence,ImageDraw,ImageFont
 import os
 import argparse
 
-IMG="timg.bmp"
+IMG="iwantall.gif"
 
 ascii_char = list("$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!;:,\"^`'.")
 
@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
             WIDTH,HEIGHT=img.size
             WIDTH=int(WIDTH/8)
-            HEIGHT=int(HEIGHT/10)
+            HEIGHT=int(HEIGHT/8)
             img = img.resize((WIDTH, HEIGHT), Image.NEAREST)
 
             im = Image.new("RGB", (WIDTH * 6, HEIGHT * 8), (255, 255, 255))
@@ -43,7 +43,7 @@ if __name__ == '__main__':
         with Image.open(IMG) as img:
 
             WIDTH,HEIGHT=img.size
-            WIDTH = int(WIDTH / 4)
+            WIDTH = int(WIDTH / 5)
             HEIGHT = int(HEIGHT / 5)
 
             images = []
